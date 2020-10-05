@@ -1,0 +1,26 @@
+{% load bootstrap4 %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palavras Repetidas em Textos</title>
+    {% bootstrap_css %}
+</head>
+<body>
+    <div class="container">
+        <h1>Projeto análise de textos</h1>
+        <div class="container">
+            
+            <a href="{% url 'texto' %}">
+                <button class="btn btn-primary">Análise de texto</button>
+            </a>
+            <a href="#">
+                <button class="btn btn-primary">Semelhança entre textos</button>
+            </a>
+            
+            
+        </div>
+    </div>
+</body>
+</html>
