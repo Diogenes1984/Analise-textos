@@ -25,7 +25,7 @@ SECRET_KEY = 'n(die_*3ci!x+aovos-y)ec3f+&@$30cb8q9-xrehl@&l1$&0*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['analize-textos-dap.herokuapp.com']
 
 
 # Application definition
