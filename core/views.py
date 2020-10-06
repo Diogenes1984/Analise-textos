@@ -3,6 +3,8 @@ from django.views.generic import TemplateView
 from .forms import TextoForm
 from .testes import *
 
+#from django.http import HttpRequest
+
 
 class IndexView(TemplateView):
     template_name = 'index.html'

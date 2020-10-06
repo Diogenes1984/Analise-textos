@@ -1,27 +1,19 @@
+{% extends 'base.html' %}
 {% load bootstrap4 %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Texto</title>
-{% bootstrap_css %}
 
-</head>
-<body>
+
+{% block content %}
     <div class="container">
-    <h1>Texto</h1>
-    {% bootstrap_messages %}
-
-    <form action="{% url 'texto' %}" method="POST" class="form" autocomplete="off">
-        {% csrf_token %}
-        {% bootstrap_form form %}
-        {% buttons %}
+        <form action="{% url 'texto' %}" method="POST" class="form" autocomplete="off">
+            {% csrf_token %}
+            {% bootstrap_form form %}
+                
             <button type="submit" class="btn btn-primary">Verificar Texto</button>
-        {% endbuttons %}
-    </form>
-
+            
+        </form>
+    </div>
+    <br>
     <div class="container">
         {% if relatorio %}
         <ul>
@@ -33,7 +25,4 @@
             
     </div>
 
-
-{% bootstrap_javascript jquery='full' %}
-</body>
-</html>
+{% endblock %}
