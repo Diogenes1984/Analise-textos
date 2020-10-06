@@ -38,11 +38,11 @@ def texto(request):
                     f'Número de frases => {num_frases}',
                     f'Total de palavras => {num_palavras}',
                     f'Número de palavras únicas => {num_palavras_unicas}',
-                    f'Número de palavras diferentes => {num_palavras_diferentes}',
                     f'Palavras únicas => {palavras_unicas}',
+                    f'Número de palavras diferentes => {num_palavras_diferentes}',
                     f'Palavras diferentes => {palavras_diferentes}',
-                    f'Lista de palavras => {palavras}',
                     f'Repetição das palavras => {lista_repeticao}',
+                    f'Lista de palavras => {palavras}',
                 ],
                 'form': form
 

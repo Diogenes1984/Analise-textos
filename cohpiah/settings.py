@@ -23,9 +23,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'n(die_*3ci!x+aovos-y)ec3f+&@$30cb8q9-xrehl@&l1$&0*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+# DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['analize-textos-dap.herokuapp.com']
+# ALLOWED_HOSTS = ['analize-textos-dap.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
