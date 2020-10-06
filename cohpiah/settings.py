@@ -26,7 +26,7 @@ SECRET_KEY = 'n(die_*3ci!x+aovos-y)ec3f+&@$30cb8q9-xrehl@&l1$&0*'
 DEBUG = False
 # DEBUG = True
 
-ALLOWED_HOSTS = ['analize-textos-dap.herokuapp.com']
+ALLOWED_HOSTS = ['analise-textos.herokuapp.com']
 # ALLOWED_HOSTS = ['*']
 
 
