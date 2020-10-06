@@ -1,7 +1,40 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-    
-<h1>Bem-vindo ao projeto de análise de textos</h1>
+    <div class="section">
+        <h1>Bem-vindo ao projeto de análise de textos</h1>
+        <p class="lead">
+            Implementação web de projeto feito no curso de Python da Universidade de São paulo (USP), Utilizando o 
+            framework Django.
+            O projeto ainda está em fase de desenvolvimento
+        </p>
 
+        <h2>Quem pode usar</h2>
+        <p>
+            Qualquer pessoa que deseja analisar um texto próprio e ver se está repetindo muitas palavras e assim melhorar
+            a qualidade do mesmo, seja para estudo ou até mesmo trabalho
+        </p>
+        <h2>Como usar:</h2>
+        <p>
+            O projeto basicamente pega um texto e faz uma análise de quantas palavras foram usadas, quantidade de 
+            palavras únicas, quantidade de palavras diferentes, repetição de cada palavra, quantidade de sentenças 
+            e quantidade 
+            de frases. É só cliclar no botão Analisar Texto 
+        </p>
+        <p>
+            <mark>
+                Obs: Frases são trechos de texto separados por uma vírgula (,), dois pontos (:) ou ponto e vírgula (;). 
+                Sentença são trechos separados por um ponto, ponto de exclamação (!) ou ponto de interrogação (?). 
+                 
+            </mark>
+        </p>
+        
+        A funcionalidade de comparar textos e ver a assinatura de um texto logo será adicionada.
+    </div>
+    <br>
+    <div class="container"></div>
+        <a href="{% url 'texto' %}">
+
+            <button class="btn btn-primary">Analisar Texto </button>
+        </a>
 {% endblock %}
